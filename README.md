@@ -6,6 +6,7 @@ A full-stack Task Manager application built with:
 - 🌐 **Frontend:** React.js, Axios
 - 📁 **Database:** SQLite (for easy setup)
 - ⚙️ **API Communication:** RESTful APIs
+- 🧪 **Extras:** Logging and Unit Test Cases for Backend
 
 ---
 ## 🚀 Getting Started
@@ -22,7 +23,7 @@ Make sure you have Go installed and modules initialized (go mod init, go mod tid
 Navigate to the frontend folder: cd frontend
 Install dependencies:npm start
 
-Axios base URL should point to your backend (e.g., http://localhost:8081
+Axios base URL should point to your backend (e.g., http://localhost:8081)
 
 ---
 ✨ Features
@@ -38,18 +39,19 @@ Full-stack integration
 
 🛠️ API Endpoints (CRUD Examples)
 🔹 Create Task
-POST /tasks
-
+POST : http://localhost:8081/tasks
+```json
 {
   "title": "Write README",
   "description": "Document everything clearly",
   "status": "Pending",
   "due_date": "2025-04-20T12:00:00Z"
 }
+```
 
 🔹 Get All Tasks
-GET /tasks
-
+GET: http://localhost:8081/tasks
+```json
 Response:
   {
     "id": 1,
@@ -59,22 +61,28 @@ Response:
     "due_date": "2025-04-20T12:00:00Z"
   }
 ]
+````
 
 🔹 Update Task
-PUT /tasks/{id}
+PUT : http://localhost:8081/tasks/{id}
 
+```json
 {
   "title": "Write README",
   "description": "Update with API details",
   "status": "In-Progress",
   "due_date": "2025-04-21T14:00:00Z"
 }
+```
 
 🔹 Delete Task
-DELETE /tasks/{id}
+DELETE http://localhost:8081/tasks/{id}
+
 ---
 🎥 Demo Screens / Videos 
-[📽️ Click to watch the demo video] (https://drive.google.com/drive/folders/1jLpzxIFcMDmWjfk-X_98uAm9-fq3IB15?usp=drive_link)
+[📽️ Click to watch the demo video] 
+-- (https://drive.google.com/drive/folders/1jLpzxIFcMDmWjfk-X_98uAm9-fq3IB15?usp=drive_link)
+
 ---
 ## 💽 SQLite DB Commands
 
@@ -83,6 +91,7 @@ To view and interact with the SQLite database used in the backend, follow these 
 1. Open the SQLite database: sqlite3 taskmanager.db
 2. List all tables: .tables
 3. View all tasks:SELECT * FROM tasks;
+   
 ---
 🧠 Tech Stack
 Technology	Description
