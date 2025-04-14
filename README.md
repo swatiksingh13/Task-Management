@@ -93,12 +93,13 @@ To view and interact with the SQLite database used in the backend, follow these 
 3. View all tasks:SELECT * FROM tasks;
    
 ---
-🧠 Tech Stack
-Technology	Description
-Golang + Gin	Web server and API routing
-GORM + SQLite	ORM and lightweight DB
-React.js	Frontend framework
-Axios	API calls from React
-VS Code	Development IDE
+🧠 ## Tech Stack
+
+-- Technology	Description
+* Golang + Gin	: Web server and API routing
+* GORM + SQLite: 	ORM and lightweight DB
+* React.js	: Frontend framework
+* Axios	: API calls from React
+* VS Code	: Development IDE
 
 Thank you for checking out the Task Manager project! Happy Coding 😃
